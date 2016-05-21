@@ -1,0 +1,31 @@
+{
+  "name": "phonenumber-for-kids",
+  "version": "0.1.0",
+  "description": "A `libphonenumber` a child could use",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Sigalas Alexandros <alxarch@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "phonenumber",
+    "libphonenumber",
+    "phone",
+    "msisdn"
+  ],
+  "dependencies": {
+    "awesome-phonenumber": "^1.0.13"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxarch/phonenumber-for-kids.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alxarch/phonenumber-for-kids/issues"
+  },
+  "homepage": "https://github.com/alxarch/phonenumber-for-kids#readme"
+}
