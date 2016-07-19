@@ -37,6 +37,26 @@ describe('Phonenumber module', () => {
 			assert.equal(phonenumber.plus('00123456'), '+123456')
 		});
 	});
+	describe('phonenumber.country`()', () => {
+		it('Finds country code', () => {
+			assert.equal(phonenumber.country('+303333333'), 'GR');
+		});
+		it('Finds country code', () => {
+			assert.equal(phonenumber.country('00303333333'), 'GR');
+		});
+		it('Finds country code', () => {
+			assert.equal(phonenumber.country('+30 33-33-333'), 'GR');
+		});
+		it('Handles null', () => {
+			assert.equal(phonenumber.country(null), null);
+		});
+		it('Handles empty string', () => {
+			assert.equal(phonenumber.country(''), null);
+		});
+		it('Handles invalid number', () => {
+			assert.equal(phonenumber.country('%214a'), null);
+		});
+	});
 	describe('phonenumber.random()', () => {
 		it('Returns a valid random number', () => {
 			let r = phonenumber.random('GR');

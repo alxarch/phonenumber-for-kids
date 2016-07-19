@@ -67,7 +67,8 @@ function possible (phone, country) {
 	return phone.a.possible && phone.a.regionCode === country;
 }
 function country (phone) {
-	const c = PhoneNumber.getRegionCodeForCountryCode(phone);
+	phone = plus(phone);
+	const c = phone ? PhoneNumber.getRegionCodeForCountryCode(phone) : null;
 	return 'ZZ' === c ? cast(phone).a.regionCode : c;
 }
 

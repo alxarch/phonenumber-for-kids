@@ -1,6 +1,6 @@
 {
   "name": "phonenumber-for-kids",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A `libphonenumber` a child could use",
   "main": "index.js",
   "scripts": {
